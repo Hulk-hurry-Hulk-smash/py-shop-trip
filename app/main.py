@@ -2,7 +2,6 @@ from app.config import config
 from app.customer import Customer
 from app.shop import Shop
 from app.car import Car
-import datetime
 
 
 def shop_trip() -> None:
@@ -36,7 +35,7 @@ def shop_trip() -> None:
 
             print(
                 f"{customer.name}'s trip "
-                f"to {shop.name} costs {total_cost:.2f}"
+                f"to the {shop.name} costs {total_cost:.2f}"
             )
 
             if total_cost < best_cost and total_cost <= customer.money:
